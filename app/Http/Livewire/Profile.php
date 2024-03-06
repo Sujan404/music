@@ -41,7 +41,9 @@ class Profile extends Component
     }
 
     public function mount() {
-        $this->user = auth()->user(); }
+    
+        $this->user = auth()->user();
+    dd($this->user); }
 
     public function save()
     {

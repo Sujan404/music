@@ -2205,7 +2205,7 @@ function initAutocomplete() {
     fields: ["address_components", "geometry"],
     types: ["address"]
   });
-  searchAddressField.focus();
+  unitNumberField.focus();
   // When the user selects an address from the drop-down, populate the
   // address fields in the form.
   autocomplete.addListener("place_changed", fillInAddress);
@@ -2297,6 +2297,7 @@ function fillInAddress() {
   }
   unitNumberField.focus();
 }
+window.initAutocomplete = initAutocomplete;
 
 /***/ }),
 

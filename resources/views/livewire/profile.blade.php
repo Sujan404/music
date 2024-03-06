@@ -209,7 +209,7 @@
                                 <input wire:model="user.street_number" class="form-control" id="street_number" type="text"
                                     placeholder="Street number">
                             </div>
-                            @error('user.street_name') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                            @error('user.street_number') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>
                     </div>
                         <div class="col mb-3">
